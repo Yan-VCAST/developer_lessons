@@ -1,0 +1,76 @@
+#1 -- GCC：GNU Compiler Collection，包含众多语言的编译器（C,C++,Java,D,Objective-C）
+	  gcc:C语言编译器
+	  
+	  交叉编译
+		1.背景：嵌入式设备往往资源受限，不可能在嵌入式上直接对处理器进行编程
+		2.解决方案：在开发主机PC上对源码进行编译，最终生成目标主机（嵌入式设备）的可执行程序
+	
+	  gcc如何进行交叉编译：
+		1.配置目标主机的编译工具链（如arm-linux）
+		2.配置工具链的具体版本：正确使用关于硬件体系结构的特殊编译选项，根据具体代码选择相应版本
+
+======================
+
+#2 -- 编译器（广义）包含4部分：
+		1. 预处理器： 简单的文本替换，处理宏；.c=>.i
+		2. 编译器（狭义）：翻译，将C语言翻译成汇编语言；.i=>.s
+		3. 汇编器：将汇编语言翻译成机器语言；.s=>.o
+		4. 链接器
+
+======================
+
+#3 -- 多语言开发的案例
+
+      方式一：不同语言编译成汇编语言后再统一链接，即文本到文本
+		行业案例： .net framework （目标就是实现开发的高效）
+		   c#, c++, VB .. ==> MSIL ==> app
+	  
+	  方式二：不同语言各自编译汇编，即文本到二进制文件
+	    行业案例：  QQ.exe
+		   AppFramework.dll  zlib.dll  lua.dll  sqlite.dll  ==> QQ.exe
+
+	  方式三： 不同语言编译成执行程序，通过“进程间通信协议”协作成完善的可执行程序
+	    行业案例：  Eclipse （IBM开发出的IDE）
+		   eclipse.exe 加载jre.exe(Java运行时), jre.exe中的Jar包依赖swt.jar/jface.jar/core.jar，而这3个主要jar包又依赖win32.dll
+		 
+======================
+
+#4 -- gcc关键编译选项
+
+	1. 预处理指令 -E
+		gcc -E file.c -o file.i
+		
+	2. 编译指令 -S
+		gcc -S file.i -o file.s
+		
+	3. 汇编指令 -c
+		gcc -c file.s -o file.o
+	
+	4. 生成映射文件(如，找出全局变量的地址)
+		gcc -Wl,-Map=test.map file.c
+
+	5. 宏定义 (在命令行中添加)
+		gcc -D'TEST="test"' file.c
+
+	6. 获取系统头文件路径
+		gcc -v file.c
+	
+	7. 生成依赖关系
+		获取目标的完整依赖关系： gcc -M file.c
+		获取目标的部分依赖关系： gcc -MM file.c
+	
+	8. 指定库文件及库文件的搜索路径
+		-L指定库文件的搜索路径
+		-l指定库文件
+		例如： gcc file.c -L. -lfunc
+		
+======================
+
+#5 -- 如果将.c文件创建为库文件
+
+	gcc -c func.c -o func.o  #将func.c汇编成目标文件func.o
+	ar crs libfunc.a func.o  #使用命令“ar crs”将func.o封装成libfunc.a库文件
+	gcc test.c -L. -lfunc    #编译test.c，目标源文件中需要func定义，则指定相应库文件及搜索路径
+	
+======================
+
