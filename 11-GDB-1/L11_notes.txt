@@ -1,13 +1,48 @@
 #1 -- GDB：GNU项目中的调试器，跟踪程序执行、恢复程序崩溃前的状态
 	  是软件就有bug，是程序就有问题；调试是软件开发过程中不可或缺的技术
 
+		“-g” 选项在编译时添加调试信息
+		“ulimit -c unlimited” 程序崩溃时产生core文件
+		“gdb **.out core” 查看调试信息
+		"ps aux" 打印进程
+		“pid” 进程ID
+
 ======================
 
-#2 -- 
+#2 -- 软件断点适用于内存中运行的程序
+		1.通过函数名设置断点
+			break func_name [if var = value]	[条件]设置断点一直有效
+			tbreak func_name [if var = value]	[条件]设置一次断点，第二次运行到时不再有效
+		2.通过文件名行号设置断点
+			break file_name:line_num [if var = value]
+			tbreak file_name:line_num [if var = value]
+		3.查看断点
+			info breakpoints
+		4.断点删除
+			delete breakpoints	删除所有断点
+			delete 1 2 n		删除指定断点
+		5.断点状态改变
+			enable 1 2 n
+			enable breakpoints
+			disable 1 2 n
+			disable breakpoints
+			
+	  硬件断点适用于只读存储器Flash中运行的程序
+		通过“hbreak”命令支持硬件断点
+		“show can-use-hw-watchpoints” 查看可以使用的硬件断点
 
 ======================
 
-#3 -- 
+#3 -- 调试时的常用操作
+		变量查看： print name
+		变量设置： set var name=value
+		执行下一行代码： next
+		连续执行n行代码： next n
+		执行进入函数： step
+		强制当前函数返回： return [value]
+		运行至当前函数返回： finish
+		执行到目标行： until line
+		跳转执行： jump line
 
 ======================
 
