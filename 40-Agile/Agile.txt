@@ -1,0 +1,112 @@
+传统的开发方法基于了3个“错误的”假设
+1.	客户知道自己要什么
+2.	研发知道如何实现
+3.	开发过程中的变更可控
+因此，瀑布式Waterfall开发流程得以风靡，其契合了：
+1.	Predictive
+2.	Documentation driven development
+3.	Process control as a core
+
+然而，涌现（Emergence）的需求是我们根本没法提前预知的
+===================================== 
+
+瀑布式开发，在确定需求后再对时间和资源进行规划，即“Fix Scope, Flex Time”;
+敏捷开发是明确和固化时间和资源投入后、尽可能满足客户需求，其核心理念“Fix Time, Flex Scope”
+
+敏捷开发就是在瀑布式开发失效的背景下提出的，根源在于市场的变化非常快，难以实现所谓的“明确需求”；同样，技术革新也日新月异，工程实现的难度也在逐步提升，在开发实现上也没法保证。
+因此，才有了一帮老美在新世纪之初聚在一起，提出了“敏捷宣言”
+===================================== 
+
+如下古文句，与Agile哲学都有相通，可做参考：
+曾子曰 “吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？”
+《礼记·中庸》“凡事预（豫）则立，不预（豫）则废。言前定，则不跲；事前定，则不困；行前定，则不疚；道前定，则不穷。”
+子曰：“学而时习之，不亦说乎？”
+
+?
+敏捷宣言 Agile Manifesto
+http://agilemanifesto.org/ 
+ 
+
+Agile Frameworks:
+?	Dynamic System Development Method (DSDM)
+?	Extreme Programming (XP)
+?	Feature Driven Development (FDD)
+?	Scrum
+?	Lean Software Development
+?	Adaptive Software Development (ASD)
+?	Crystal Clear
+?	Behavior driven development (BDD)
+
+
+Agile Practices:
+    Agile lays out a vision and then nurtures project resources to do the best possible to achieve the plan
+    Agile is the “art of the possible”
+
+
+Agile employs the following practices:
+?	Frequent inspection and adaption
+?	Emergence of requirements, technology, and team capabilities
+?	Self-organization and adaption in response to what emerges
+?	Dealing with reality, not false-safe artifacts
+?	Collaboration
+
+?
+Scrum是Agile（敏捷开发方法）的一种外在形式，即软件开发方法
+
+
+Scrum的4个核心要点
+1.	Sprint冲刺，即在一个固定的开发周期内，尽可能多地完成任务
+2.	Iteration迭代，通过不断迭代实现产品的逐步优化，直到满足用户需求
+3.	TDD-Test Driven Development，测试驱动开发；即通过测试来推动整个开发进行，有助于编写简洁可用和高质量的代码，并加速开发过程
+4.	Gated Launch，灰度发布；即在发布的版本保留一定灰度，出现问题可及时调整，避免问题大范围爆发
+
+Scrum Values (work culture)
+?	Focus
+?	Commitment
+?	Openness
+?	Respect
+?	Courage
+
+Scrum Roles
+?	Product Owner (PO is accountable for winning the market, and do the “right” thing)
+?	ScrumMaster (温故而知新，可以为师矣)
+?	Development Team
+
+Scrum Meetings
+?	Sprint Planning
+?	Daily Scrum
+?	Sprint Review
+?	Sprint Retrospective
+
+For new team, 12-step program:
+1.	Agree on a PO, SM, and Development Team; and on Product goal/theme
+2.	Set a date now Sprint Review in X weeks (+ time to get backlog ready) and send out invites
+3.	Review/define an ordered PB of features
+4.	Estimate the PBI’s
+5.	Conduct Sprint Planning with Scrum Team and Stakeholders. Complete Sprint Backlog
+6.	Commit as a team to the Sprint
+7.	Track status and obstacles daily via the Daily Scrum
+8.	Track progress using the Sprint Burndown
+9.	Conduct a Sprint Review; only review done items
+10.	Conduct a team Retrospective
+11.	Take action on top impediment
+12.	GOTO 2
+?
+Scrum Glossary
+
+Product Owner (PO)	产品负责人
+Product Backlog	产品待办列表
+Product Backlog Item (PBI)	待办列表条目
+Backlog Refinement / GROOMING	待办列表梳理
+Release Planning	发布计划
+Empirical Process	经验性流程
+Inspect and Adapt	检查并适应
+Cross-functional Feature team	跨职能特性团队
+Self-organizing team	自组织团队
+Sprint backlog	冲刺待办列表
+Sprint Planning	冲刺计划
+Daily Scrum	每日Scrum
+Sprint Review	冲刺评审
+Sprint Retrospective	冲刺回顾
+Definition of Done (DoD)	完成的定义
+
