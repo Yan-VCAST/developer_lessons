@@ -2,6 +2,7 @@
 1.	客户知道自己要什么
 2.	研发知道如何实现
 3.	开发过程中的变更可控
+
 因此，瀑布式Waterfall开发流程得以风靡，其契合了：
 1.	Predictive
 2.	Documentation driven development
@@ -15,6 +16,7 @@
 
 敏捷开发就是在瀑布式开发失效的背景下提出的，根源在于市场的变化非常快，难以实现所谓的“明确需求”；同样，技术革新也日新月异，工程实现的难度也在逐步提升，在开发实现上也没法保证。
 因此，才有了一帮老美在新世纪之初聚在一起，提出了“敏捷宣言”
+
 ===================================== 
 
 如下古文句，与Agile哲学都有相通，可做参考：
@@ -22,7 +24,9 @@
 《礼记·中庸》“凡事预（豫）则立，不预（豫）则废。言前定，则不跲；事前定，则不困；行前定，则不疚；道前定，则不穷。”
 子曰：“学而时习之，不亦说乎？”
 
-?
+
+
+
 敏捷宣言 Agile Manifesto
 http://agilemanifesto.org/ 
  
@@ -50,7 +54,7 @@ Agile employs the following practices:
 ?	Dealing with reality, not false-safe artifacts
 ?	Collaboration
 
-?
+
 Scrum是Agile（敏捷开发方法）的一种外在形式，即软件开发方法
 
 
@@ -60,6 +64,7 @@ Scrum的4个核心要点
 3.	TDD-Test Driven Development，测试驱动开发；即通过测试来推动整个开发进行，有助于编写简洁可用和高质量的代码，并加速开发过程
 4.	Gated Launch，灰度发布；即在发布的版本保留一定灰度，出现问题可及时调整，避免问题大范围爆发
 
+
 Scrum Values (work culture)
 ?	Focus
 ?	Commitment
@@ -67,16 +72,19 @@ Scrum Values (work culture)
 ?	Respect
 ?	Courage
 
+
 Scrum Roles
 ?	Product Owner (PO is accountable for winning the market, and do the “right” thing)
 ?	ScrumMaster (温故而知新，可以为师矣)
 ?	Development Team
+
 
 Scrum Meetings
 ?	Sprint Planning
 ?	Daily Scrum
 ?	Sprint Review
 ?	Sprint Retrospective
+
 
 For new team, 12-step program:
 1.	Agree on a PO, SM, and Development Team; and on Product goal/theme
