@@ -91,11 +91,13 @@ For new team, 12-step program:
 10.	Conduct a team Retrospective
 11.	Take action on top impediment
 12.	GOTO 2
-?
+ 
+ 
+
 Scrum Glossary
 
 Product Owner (PO)	产品负责人
-Product Backlog	产品待办列表
+Product Backlog		产品待办列表
 Product Backlog Item (PBI)	待办列表条目
 Backlog Refinement / GROOMING	待办列表梳理
 Release Planning	发布计划
@@ -103,10 +105,10 @@ Empirical Process	经验性流程
 Inspect and Adapt	检查并适应
 Cross-functional Feature team	跨职能特性团队
 Self-organizing team	自组织团队
-Sprint backlog	冲刺待办列表
-Sprint Planning	冲刺计划
-Daily Scrum	每日Scrum
-Sprint Review	冲刺评审
+Sprint backlog		冲刺待办列表
+Sprint Planning		冲刺计划
+Daily Scrum			每日Scrum
+Sprint Review		冲刺评审
 Sprint Retrospective	冲刺回顾
 Definition of Done (DoD)	完成的定义
 
